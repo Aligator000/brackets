@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
 
 const brackets = [];
-var res = str.split(" ");
+const res = str.split(" ");
 
 res.forEach((bracket1) => bracketsConfig.forEach((bracket2) => {
     if(bracket1 === bracket2) {
@@ -9,4 +9,5 @@ res.forEach((bracket1) => bracketsConfig.forEach((bracket2) => {
     } 
 }));
     return brackets;
+
 }
